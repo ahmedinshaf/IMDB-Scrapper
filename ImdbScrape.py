@@ -59,10 +59,8 @@ def user_review(url, n):
 def create_csv(urls, i, m):
     review_n = []
     review_p = []
-    review_n += user_review(urls[i], 1)+user_review(urls[i], 2) + \
-        user_review(urls[i], 3)+user_review(urls[i], 4)
-    review_p += user_review(urls[i], 8) + \
-        user_review(urls[i], 9)+user_review(urls[i], 10)
+    review_n += user_review(urls[i], 1)+user_review(urls[i], 2) + user_review(urls[i], 3)+user_review(urls[i], 4)+user_review(urls[i],5) + user_review(urls[i], 6)+user_review(urls[i], 7)
+    review_p += user_review(urls[i], 8) + user_review(urls[i], 9)+user_review(urls[i], 10)
     review = review_n + review_p
     # print(review)
     rate = ['Negative']*len(review_n) + ['Positive']*len(review_p)
